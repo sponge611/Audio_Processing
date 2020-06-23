@@ -1,42 +1,52 @@
-1.makeSpectrum.m
+## Goal
+
+[Spec](https://drive.google.com/file/d/12GCtrW4ueeLoFflplqQ2W-DxzLkm_cTY/view?usp=sharing)
+
+
+## Explaination and What Will You Get
+
+###makeSpectrum.m
+
 function
-用以產生frequency spectrum
 
-2.myfilter.m
+To produce frequency spectrum of audio input.
+
+###myfilter.m
+
 function
-用以產生lowpass、bandpass、highpass的FIR filter
 
-3.HW2_Q1
+To produce lowpass, bandpass, highpass FIR filters
 
-點開HW2_Q1.m這個script，然後點run執行
-執行後會跑出
-figure1 原始音檔的frequency spectrum
-figure2 Filter 在 time domain的shape
-figure3 Filter 在 frequency domain的分布
-figure4 分出來的三個音檔的frequency spectrum
+###HW2_Q1.m
 
-會產生
-LowPass_400.wav
-LowPass_400_2kHZ.wav
-BandPass_400_800.wav
-BandPass_400_800_2kHZ.wav
-HighPass_800.wav
-HighPass_800_2kHZ.wav
-Echo_one.wav
-Echo_multiple.wav
+After run HW2_Q1, you will get 
+  -(1) the frequency spectrum of original audio
+  -(2) the filters' shape in time domain
+  -(3) the filters' distribution in frequency domain
+  -(4) frequency spectrum of three audio files which is seperate from the original audio file by using the filters
 
-4.HW2_Q2
-點開HW2_Q2.m這個script，然後點run執行
-執行後會跑出
-figure1 原始音檔的frequency spectrum
-figure2 原始音檔在time domain的shape
-figure3 原始音檔經過bit reduction和dithering後的frequency spectrum
-figure4 原始音檔經過bit reduction和dithering後在time domain的shape
-figure5 原始音檔經過bit reduction和dithering和noise shaping後的frequency spectrum
-figure6 原始音檔經過bit reduction和dithering和noise shaping後在time domain的shape
-figure7 Recover音訊的frequency spectrum
-figure8 Recover音訊在time domain的shape
+Files which will be produced
+  -LowPass_400.wav
+  -LowPass_400_2kHZ.wav
+  -BandPass_400_800.wav
+  -BandPass_400_800_2kHZ.wav
+  -HighPass_800.wav
+  -HighPass_800_2kHZ.wav
+  -Echo_one.wav
+  -Echo_multiple.wav
 
-會產生
-Tempest_8bit.wav
-Tempest_Recover.wav
+###HW2_Q2.m
+
+After run HW2_Q2, you will get 
+  -(1) the frequency spectrum of original audio
+  -(2) the original audio's shape in time domain
+  -(3) the frequency spectrum of original audio after bit reduction and dithering
+  -(4) the time domain shape of original audio after bit reduction and dithering 
+  -(5) the frequency spectrum of original audio after bit reduction, dithering, and noise shaping
+  -(6) the time domain shape of original audio after bit reduction, dithering, and noise shaping
+  -(7) the frequency spectrum after recovering the audio 
+  -(8) the time domain shape after recovering the audio
+
+Files which will be produced
+  -Tempest_8bit.wav
+  -Tempest_Recover.wav
